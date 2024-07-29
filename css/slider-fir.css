@@ -1,0 +1,97 @@
+.slider-fir {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+/* 这部分为图片样式 */
+.slider-fir .slider-wrapper {
+  position: relative;
+  z-index: -10;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: 0.5s ease;
+  /* overflow: hidden; */
+}
+
+/* 这部分为按钮样式 */
+.slider-fir-btn-left,
+.slider-fir-btn-right {
+  width: 70px;
+  height: 70px;
+  background-color: #ffffff00;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.slider-fir-btn-left {
+  left: 0;
+  bottom: 50%;
+}
+
+.slider-fir-btn-right {
+  right: 0;
+  bottom: 50%;
+}
+#slider-fir-prev {
+  font-size: 32px;
+  font-weight: bolder;
+}
+#slider-fir-prev-hover {
+  position: absolute;
+  font-size: 32px;
+  font-weight: bolder;
+  display: none;
+}
+#slider-fir-next {
+  font-size: 32px;
+  font-weight: bolder;
+}
+#slider-fir-next-hover {
+  position: absolute;
+  font-size: 32px;
+  font-weight: bolder;
+  display: none;
+}
+
+/* 此部分为屏幕下方按钮 */
+.sliderFir-span {
+  height: 3px;
+  width: 100%;
+  /* background-color: pink; */
+  position: absolute;
+  bottom: 70px;
+}
+
+.sliderFir-span .left {
+  position: absolute;
+  display: inline-block;
+  right: 50%;
+  width: 10%;
+  height: 3px;
+  background: #b2b2b2;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.sliderFir-span .right {
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  width: 10%;
+  height: 3px;
+  background: #b2b2b2;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.sliderFir-span .left:hover,
+.sliderFir-span .right:hover {
+  background-color: #808080;
+}
+.sliderFir-span span.leftactive {
+  opacity: 1;
+  background: #ff6900;
+}

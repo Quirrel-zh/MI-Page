@@ -1,0 +1,95 @@
+.slider-sec {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+/* 这部分为图片样式 */
+.slider-sec .slider-wrapper {
+  position: relative;
+  z-index: -10;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: 0.5s ease;
+  /* overflow: hidden; */
+}
+/* 这部分为按钮样式 */
+.slider-sec-btn-left,
+.slider-sec-btn-right {
+  width: 70px;
+  height: 70px;
+  background-color: #ffffff00;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.slider-sec-btn-left {
+  left: 0;
+  bottom: 50%;
+}
+
+.slider-sec-btn-right {
+  right: 0;
+  bottom: 50%;
+}
+#slider-sec-prev {
+  font-size: 32px;
+  font-weight: bolder;
+}
+#slider-sec-prev-hover {
+  position: absolute;
+  font-size: 32px;
+  font-weight: bolder;
+  display: none;
+}
+#slider-sec-next {
+  font-size: 32px;
+  font-weight: bolder;
+}
+#slider-sec-next-hover {
+  position: absolute;
+  font-size: 32px;
+  font-weight: bolder;
+  display: none;
+}
+/* 此处为底部按钮 */
+.sliderSec-span {
+  height: 3px;
+  width: 100%;
+  /* background-color: pink; */
+  position: absolute;
+  bottom: 70px;
+}
+
+.sliderSec-span .left {
+  position: absolute;
+  display: inline-block;
+  right: 50%;
+  width: 10%;
+  height: 3px;
+  background: #b2b2b2;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.sliderSec-span .right {
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  width: 10%;
+  height: 3px;
+  background: #b2b2b2;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.sliderSec-span .left:hover,
+.sliderSec-span .right:hover {
+  background-color: #808080;
+}
+.sliderSec-span span.leftactive {
+  opacity: 1;
+  background: #ff6900;
+}
